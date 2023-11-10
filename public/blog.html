@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../template/assets/" data-template="vertical-menu-template-no-customizer">
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../template/assets/" data-template="vertical-menu-template">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dashboard - eCommerce | Vuexy - Bootstrap Admin Template</title>
+    <title>Wizard Numbered - Forms | Vuexy - Bootstrap Admin Template</title>
 
     <meta name="description" content="" />
 
@@ -32,10 +32,10 @@
     <link rel="stylesheet" href="../template/assets/vendor/libs/node-waves/node-waves.css" />
     <link rel="stylesheet" href="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="../template/assets/vendor/libs/typeahead-js/typeahead.css" />
-    <link rel="stylesheet" href="../template/assets/vendor/libs/select2/select2.css" />
-    <link rel="stylesheet" href="../template/assets/vendor/libs/tagify/tagify.css" />
+    <link rel="stylesheet" href="../template/assets/vendor/libs/bs-stepper/bs-stepper.css" />
     <link rel="stylesheet" href="../template/assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
-    <link rel="stylesheet" href="../template/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../template/assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="../template/assets/vendor/libs/@form-validation/umd/styles/index.min.css" />
 
     <!-- Page CSS -->
 
@@ -50,112 +50,6 @@
 
 <body>
     <!-- Layout wrapper -->
-    <div class=" justify-content-center align-items-center clientpopup" id="" style="display: none; height: 100vh; position: absolute; z-index: 2000; width: 100%; background-color: rgba(0, 0, 0, 0.282);">
-
-        <div class="col-12" style="width: 80%;">
-            <div class="card">
-
-                <div class="card-body">
-                    <form id="formValidationExamples" class="row g-3">
-                        <!-- Account Details -->
-                        <div class="d-flex justify-content-end">
-                            <button class="btn" id="closeclientpopupBtn">
-                                x
-                            </button>
-                        </div>
-                        <div class="col-12">
-                            <h6>Add a New Company</h6>
-                            <hr class="mt-0" />
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label" for="formValidationName">Company Name</label>
-                            <input type="text" id="formValidationName" class="form-control" placeholder="John Doe" name="formValidationName" />
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label" for="formValidationEmail">Your Role</label>
-                            <input class="form-control" type="email" id="formValidationEmail" name="formValidationEmail" placeholder="john.doe" />
-                        </div>
-
-
-
-
-
-
-
-
-                        <div class="col-md-6">
-                            <label class="form-label" for="formValidationSelect2">Industry</label>
-                            <select id="formValidationSelect2" name="formValidationSelect2" class="form-select select2" data-allow-clear="true">
-                      <option value="">Select</option>
-                      <option value="Australia">Australia</option>
-                      <option value="Bangladesh">Bangladesh</option>
-                      <option value="Belarus">Belarus</option>
-                      <option value="Brazil">Brazil</option>
-                      <option value="Canada">Canada</option>
-                      <option value="China">China</option>
-                      <option value="France">France</option>
-                      <option value="Germany">Germany</option>
-                      <option value="India">India</option>
-                      <option value="Indonesia">Indonesia</option>
-                      <option value="Israel">Israel</option>
-                      <option value="Italy">Italy</option>
-                      <option value="Japan">Japan</option>
-                      <option value="Korea">Korea, Republic of</option>
-                      <option value="Mexico">Mexico</option>
-                      <option value="Philippines">Philippines</option>
-                      <option value="Russia">Russian Federation</option>
-                      <option value="South Africa">South Africa</option>
-                      <option value="Thailand">Thailand</option>
-                      <option value="Turkey">Turkey</option>
-                      <option value="Ukraine">Ukraine</option>
-                      <option value="United Arab Emirates">United Arab Emirates</option>
-                      <option value="United Kingdom">United Kingdom</option>
-                      <option value="United States">United States</option>
-                    </select>
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <label class="form-label" for="formValidationTech">Tech</label>
-                            <input class="form-control typeahead" type="text" id="formValidationTech" name="formValidationTech" autocomplete="off" />
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <label class="form-label" for="formValidationBio">Add a Note</label>
-                            <textarea class="form-control" id="formValidationBio" name="formValidationBio" rows="3"></textarea>
-                        </div>
-
-
-                        <!-- Choose Your Plan -->
-
-
-                        <div class="col-12">
-                            <label class="switch switch-primary">
-                      <input type="checkbox" class="switch-input" name="formValidationSwitch" />
-                      <span class="switch-toggle-slider">
-                        <span class="switch-on"></span>
-                        <span class="switch-off"></span>
-                      </span>
-                      <span class="switch-label">Send me related emails</span>
-                    </label>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="formValidationCheckbox" name="formValidationCheckbox" />
-                                <label class="form-check-label" for="formValidationCheckbox">Agree to our terms and conditions</label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-    </div>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
@@ -205,23 +99,23 @@
                     <li class="menu-item ">
                         <a href="/" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-messages"></i>
-                            <div data-i18n="Dashboard">Dashboard</div>
+                            <div data-i18n="Dashboard">Clients</div>
                         </a>
                     </li>
-                    <li class="menu-item active">
-                        <a href="" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-messages"></i>
-                            <div data-i18n="Clients">Clients</div>
-                        </a>
-                    </li>
-
-
                     <li class="menu-item">
+                        <a href="./Clients.html" class="menu-link">
+                            <i class="menu-icon tf-icons ti ti-messages"></i>
+                            <div>Clients</div>
+                        </a>
+                    </li>
+
+
+                    <li class="menu-item active open">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <div data-i18n="Prpjects">Projects</div>
+                            <div>Projects</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item">
+                            <li class="menu-item active">
                                 <a href="./addProject.html" class="menu-link">
                                     <div>Add new</div>
                                 </a>
@@ -232,7 +126,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-ecommerce-settings-payments.html" class="menu-link">
+                                <a href="" class="menu-link">
                                     <div>Published Project</div>
                                 </a>
                             </li>
@@ -241,8 +135,8 @@
                                     <div>Pending Project</div>
                                 </a>
                             </li>
-                            
-                           
+
+
                         </ul>
                     </li>
                 </ul>
@@ -317,6 +211,31 @@
                                 </ul>
                             </li>
                             <!--/ Language -->
+
+                            <!-- Style Switcher -->
+                            <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <i class="ti ti-md"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
+                                            <span class="align-middle"><i class="ti ti-sun me-2"></i>Light</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0);" data-theme="dark">
+                                            <span class="align-middle"><i class="ti ti-moon me-2"></i>Dark</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
+                                            <span class="align-middle"><i class="ti ti-device-desktop me-2"></i>System</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- / Style Switcher-->
 
                             <!-- Quick links  -->
                             <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
@@ -703,301 +622,213 @@
                     <!-- Content -->
 
                     <div class="container-xxl flex-grow-1 container-p-y">
+                        <h4 class="py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span>Blog</h4>
+                        <!-- Default -->
+                        <div id="handle-list-2" class=" row d-flex flex-column align-items-center " style="gap: 20px; ">
 
-
-
-
-
-
-                        <div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-4" style="margin-right: 22px;">
-                                <h4 class="py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Clients</h4>
-                                <div class="d-flex gap-3" style="max-width: 540px; width: 100%;">
-                                    <div style="max-width: 400px; width: 100%;">
-                                        <div class="input-group input-group-merge">
-                                            <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
-                                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon-search31" />
+                            <div class="drag-handle " style="max-width: 800PX; width: 100%; ">
+                                <div class="card shadow-none mb-3 ">
+                                    <div class="card-body ">
+                                        <div class="dropdown" style="position:absolute; right: 10px; font-size: 10px !important; ">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow show" data-bs-toggle="dropdown" aria-expanded="true">
+                                              <i class="ti ti-dots-vertical"></i>
+                                            </button>
+                                            <div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1044px, 157.6px, 0px);">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Re-generate</a>
+                                            </div>
                                         </div>
-                                        <!-- <select id="selectpickerBasic" class="selectpicker w-100" data-style="btn-default">
-                                  <option>Rocky</option>
-                                  <option>Pulp Fiction</option>
-                                  <option>The Godfather</option>
-                                </select> -->
+
+                                        <h4 class="card-title border-bottom ">Mindfulness in Motion: A 7-Day Meditation Challenge</h4>
+                                        <p class="card-text " style="line-height: 30px; ">World War II, also known as the Second World War, was a global conflict that lasted from 1939 to 1945. It involved many countries and resulted in the loss of millions of lives. While the bravery and sacrifices of
+                                            well-known figures such as Winston Churchill, Franklin D. Roosevelt, and Adolf Hitler are often highlighted in history books and movies, there are many other unsung heroes whose contributions are often overlooked.
+                                            In this blog post, we will explore the top five forgotten heroes of WWII whose courage and actions played a crucial role in the outcome of the war..</p>
                                     </div>
-                                    <div><button id="openAddCLientBtn" class="clipboard-btn btn btn-primary  waves-effect waves-light" data-clipboard-action="copy" data-clipboard-target="#clipboard-example">
-                                    + Client
-                                  </button></div>
                                 </div>
                             </div>
-                            <div class="card">
-                                
-                                <div class="table-responsive text-nowrap">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Client</th>
-                                                <th>Industry</th>
-                                                <th>Your Role</th>
-                                                <th>Published</th>
-                                                <th>Draft</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="table-border-bottom-0">
-                                            <tr>
-                                                <td>
-                                                    <a href="./singleClient.html">
-                                                        <i class="ti ti-brand-angular ti-lg text-danger me-3"></i>
-                                                    <span class="fw-medium">Cubitrek</span>
-                                                    </a>
-                                                </td>
-                                                <td>Software</td>
-                                                <td>
-                                                    Developer
-                                                </td>
-                                                <td>30</td>
-                                                <td>5</td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                            <i class="ti ti-dots-vertical"></i>
+                            <div class="d-flex justify-content-center ">
+                                <span class="badge bg-label-primary d-flex justify-content-center align-items-center " style=" margin: 10px 0 20px 0; padding: 0; border-radius: 100%; width: 40px; height: 40px; "><button class="btn " style="font-size:
+                            20px; ">+</button></span>
+                            </div>
+                            <div class="drag-handle " style="max-width: 800PX; width: 100%; ">
+                                <div class="card shadow-none mb-3 ">
+                                    <div class="card-body ">
+                                        <div class="dropdown" style="position:absolute; right: 10px; font-size: 10px !important; ">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow show" data-bs-toggle="dropdown" aria-expanded="true">
+                                              <i class="ti ti-dots-vertical"></i>
                                             </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a
-                                            >
-                                                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a
-                                            >
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <a href="">
-                                                        <i class="ti ti-brand-angular ti-lg text-danger me-3"></i>
-                                                    <span class="fw-medium">Cubitrek</span>
-                                                    </a>
-                                                </td>
-                                                <td>Software</td>
-                                                <td>
-                                                    Developer
-                                                </td>
-                                                <td>30</td>
-                                                <td>5</td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                            <i class="ti ti-dots-vertical"></i>
-                                            </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a
-                                            >
-                                                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a
-                                            >
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <a href="">
-                                                        <i class="ti ti-brand-angular ti-lg text-danger me-3"></i>
-                                                    <span class="fw-medium">Cubitrek</span>
-                                                    </a>
-                                                </td>
-                                                <td>Software</td>
-                                                <td>
-                                                    Developer
-                                                </td>
-                                                <td>30</td>
-                                                <td>5</td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                            <i class="ti ti-dots-vertical"></i>
-                                            </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a
-                                            >
-                                                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a
-                                            >
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <a href="">
-                                                        <i class="ti ti-brand-angular ti-lg text-danger me-3"></i>
-                                                    <span class="fw-medium">Cubitrek</span>
-                                                    </a>
-                                                </td>
-                                                <td>Software</td>
-                                                <td>
-                                                    Developer
-                                                </td>
-                                                <td>30</td>
-                                                <td>5</td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                            <i class="ti ti-dots-vertical"></i>
-                                            </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a
-                                            >
-                                                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a
-                                            >
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <a href="">
-                                                        <i class="ti ti-brand-angular ti-lg text-danger me-3"></i>
-                                                    <span class="fw-medium">Cubitrek</span>
-                                                    </a>
-                                                </td>
-                                                <td>Software</td>
-                                                <td>
-                                                    Developer
-                                                </td>
-                                                <td>30</td>
-                                                <td>5</td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                            <i class="ti ti-dots-vertical"></i>
-                                            </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a
-                                            >
-                                                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a
-                                            >
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <a href="">
-                                                        <i class="ti ti-brand-angular ti-lg text-danger me-3"></i>
-                                                    <span class="fw-medium">Cubitrek</span>
-                                                    </a>
-                                                </td>
-                                                <td>Software</td>
-                                                <td>
-                                                    Developer
-                                                </td>
-                                                <td>30</td>
-                                                <td>5</td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                            <i class="ti ti-dots-vertical"></i>
-                                            </button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a
-                                            >
-                                                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a
-                                            >
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                              </tr>
-                                          <tr>
-                                            <td>
-                                                <a href="">
-                                                    <i class="ti ti-brand-angular ti-lg text-danger me-3"></i>
-                                                <span class="fw-medium">Cubitrek</span>
-                                                </a>
-                                            </td>
-                                            <td>Software</td>
-                                            <td>
-                                                Developer
-                                            </td>
-                                            <td>30</td>
-                                            <td>5</td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                        <i class="ti ti-dots-vertical"></i>
-                                        </button>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a
-                                        >
-                                                                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a
-                                        >
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </td>
-                                          </tr>
-                                        </tbody>
-                                    </table>
+                                            <div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1044px, 157.6px, 0px);">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Re-generate</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="card-title ">Table of Contents:</h5>
+                                        <ul style="line-height: 30px; ">
+                                            <li> Getting Started</li>
+                                            <li>Mindful Breathing Techniques</li>
+                                            <li>Body Scan Meditation</li>
+                                            <li>Overcoming Challenges</li>
+                                            <li> Mindful Walking Meditation</li>
+                                            <li> Mindful Walking Meditation</li>
+                                            <li> Mindful Walking Meditation</li>
+                                            <li> Mindful Walking Meditation</li>
+                                        </ul>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex justify-content-center ">
+                                <span class="badge bg-label-primary d-flex justify-content-center align-items-center " style=" margin: 10px 0 20px 0; padding: 0; border-radius: 100%; width: 40px; height: 40px; "><button class="btn " style="font-size:
+                            20px; ">+</button></span>
+                            </div>
+                            <div class="drag-handle " style="max-width: 800PX; width: 100%; ">
+                                <div class="card shadow-none mb-3 ">
+                                    <div class="card-body ">
+                                        <div class="dropdown" style="position:absolute; right: 10px; font-size: 10px !important; ">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow show" data-bs-toggle="dropdown" aria-expanded="true">
+                                              <i class="ti ti-dots-vertical"></i>
+                                            </button>
+                                            <div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1044px, 157.6px, 0px);">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Re-generate</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="card-title ">Getting Started</h5>
+                                        <p style="line-height: 30px; " class="card-text ">Begin your journey by understanding the basics of meditation. Find a quiet space, sit comfortably, and focus on your breath. The simplicity of this practice sets the foundation for the days ahead. cultivating inner
+                                            peace in just a week. Welcome to "Mindfulness in Motion, " a transformative 7-day meditation challenge designed to bring mindfulness into your daily life. This journey aims to explore various meditation techniques,
+                                            promoting well-being, and cultivating inner peace in just a week
+                                        </p>
+                                        <div class="d-flex justify-content-center ">
+                                            <img style="width: 90%; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCgRRWKW4olT2ACgDvuxURFvjxX956eKM9vQ&usqp=CAU " alt=" ">
+
+                                        </div>
+                                        <p style="line-height: 30px; " class="my-4 ">
+                                            a transformative 7-day meditation challenge designed to bring mindfulness into your daily life. This journey aims to explore various meditation techniques, promoting well-being, and cultivating inner peace in just a week
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center ">
+                                <span class="badge bg-label-primary d-flex justify-content-center align-items-center " style=" margin: 10px 0 20px 0; padding: 0; border-radius: 100%; width: 40px; height: 40px; "><button class="btn " style="font-size:
+                            20px; ">+</button></span>
+                            </div>
+                            <div class="drag-handle " style="max-width: 800PX; width: 100%; ">
+                                <div class="card shadow-none mb-3 ">
+                                    <div class="card-body " style="position: relative; ">
+                                        <div class="dropdown" style="position:absolute; right: 10px; font-size: 10px !important; ">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow show" data-bs-toggle="dropdown" aria-expanded="true">
+                                              <i class="ti ti-dots-vertical"></i>
+                                            </button>
+                                            <div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1044px, 157.6px, 0px);">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Re-generate</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title border-bottom ">Mindful Breathing Techniques</h4>
+                                        <p style="line-height: 30px; " class="card-text ">
+                                            Explore the power of mindful breathing. Try deep breathing or diaphragmatic breathing to center yourself. Notice the calming effects as you bring awareness to each breath.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center ">
+                                <span class="badge bg-label-primary d-flex justify-content-center align-items-center " style=" margin: 10px 0 20px 0; padding: 0; border-radius: 100%; width: 40px; height: 40px; "><button class="btn " style="font-size:
+                            20px; ">+</button></span>
+                            </div>
+                            <div class="drag-handle " style="max-width: 800PX; width: 100%; ">
+                                <div class="card shadow-none mb-3 ">
+                                    <div class="card-body ">
+                                        <div class="dropdown" style="position:absolute; right: 10px; font-size: 10px !important; ">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow show" data-bs-toggle="dropdown" aria-expanded="true">
+                                              <i class="ti ti-dots-vertical"></i>
+                                            </button>
+                                            <div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1044px, 157.6px, 0px);">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Re-generate</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title ">Body Scan Meditation</h4>
+                                        <p style="line-height: 30px; " class="card-text ">Begin your journey by understanding the basics of meditation. Find a quiet space, sit comfortably, and focus on your breath. The simplicity of this practice sets the foundation for the days ahead. cultivating inner
+                                            peace in just a week.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center ">
+                                <span class="badge bg-label-primary d-flex justify-content-center align-items-center " style=" margin: 10px 0 20px 0; padding: 0; border-radius: 100%; width: 40px; height: 40px; "><button class="btn " style="font-size:
+                            20px; ">+</button></span>
                             </div>
 
                         </div>
 
-                        <div>
 
-                        </div>
-                        <!-- Content wrapper -->
+
                     </div>
-                    <!-- / Layout page -->
+
+
+                    <div class="content-backdrop fade "></div>
                 </div>
-
-                <!-- Overlay -->
-                <div class="layout-overlay layout-menu-toggle"></div>
-
-                <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-                <div class="drag-target"></div>
+                <!-- Content wrapper -->
             </div>
-            <!-- / Layout wrapper -->
+            <!-- / Layout page -->
+        </div>
 
-            <!-- Core JS -->
-            <!-- build:js assets/vendor/js/core.js -->
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle "></div>
 
-            <script src="../template/assets/vendor/libs/jquery/jquery.js"></script>
-            <script src="../template/assets/vendor/libs/popper/popper.js"></script>
-            <script src="../template/assets/vendor/js/bootstrap.js"></script>
-            <script src="../template/assets/vendor/libs/node-waves/node-waves.js"></script>
-            <script src="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-            <script src="../template/assets/vendor/libs/hammer/hammer.js"></script>
-            <script src="../template/assets/vendor/libs/i18n/i18n.js"></script>
-            <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js"></script>
-            <script src="../template/assets/vendor/js/menu.js"></script>
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target "></div>
+    </div>
+    <!-- / Layout wrapper -->
 
-            <!-- endbuild -->
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
 
-            <!-- Vendors JS -->
-            <script src="../template/assets/vendor/libs/select2/select2.js"></script>
-            <script src="../template/assets/vendor/libs/tagify/tagify.js"></script>
-            <script src="../template/assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
-            <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js"></script>
-            <script src="../template/assets/vendor/libs/bloodhound/bloodhound.js"></script>
+    <script src="../template/assets/vendor/libs/jquery/jquery.js "></script>
+    <script src="../template/assets/vendor/libs/popper/popper.js "></script>
+    <script src="../template/assets/vendor/js/bootstrap.js "></script>
+    <script src="../template/assets/vendor/libs/node-waves/node-waves.js "></script>
+    <script src="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js "></script>
+    <script src="../template/assets/vendor/libs/hammer/hammer.js "></script>
+    <script src="../template/assets/vendor/libs/i18n/i18n.js "></script>
+    <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js "></script>
+    <script src="../template/assets/vendor/js/menu.js "></script>
 
-            <!-- Main JS -->
-            <script src="../template/assets/js/main.js"></script>
+    <!-- endbuild -->
 
-            <!-- Page JS -->
-            <script src="../template/assets/js/forms-selects.js"></script>
-            <script src="../template/assets/js/forms-tagify.js"></script>
-            <script src="../template/assets/js/forms-typeahead.js"></script>
+    <!-- Vendors JS -->
+    <script src="../template/assets/vendor/libs/bs-stepper/bs-stepper.js "></script>
+    <script src="../template/assets/vendor/libs/bootstrap-select/bootstrap-select.js "></script>
+    <script src="../template/assets/vendor/libs/select2/select2.js "></script>
+    <script src="../template/assets/vendor/libs/@form-validation/umd/bundle/popular.min.js "></script>
+    <script src="../template/assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js "></script>
+    <script src="../template/assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js "></script>
 
-            <script>
-                document.getElementById("closeclientpopupBtn").addEventListener("click",(e)=>{
-                    e.preventDefault();
-                    document.querySelector(".clientpopup").style.display = "none";
-                })
-                document.getElementById("openAddCLientBtn").addEventListener("click",(e)=>{
-                    e.preventDefault();
-                    document.querySelector(".clientpopup").style.display = "flex";
-                })
-                
-            </script>
+    <!-- Main JS -->
+    <script src="../template/assets/js/main.js "></script>
+
+    <!-- Page JS -->
+
+    <script src="../template/assets/js/form-wizard-numbered.js "></script>
+    <script src="../template/assets/js/form-wizard-validation.js "></script>
+    <script src="../template/assets/vendor/libs/jquery/jquery.js "></script>
+    <script src="../template/assets/vendor/libs/popper/popper.js "></script>
+    <script src="../template/assets/vendor/js/bootstrap.js "></script>
+    <script src="../template/assets/vendor/libs/node-waves/node-waves.js "></script>
+    <script src="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js "></script>
+    <script src="../template/assets/vendor/libs/hammer/hammer.js "></script>
+    <script src="../template/assets/vendor/libs/i18n/i18n.js "></script>
+    <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js "></script>
+    <script src="../template/assets/vendor/js/menu.js "></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../template/assets/vendor/libs/sortablejs/sortable.js "></script>
+
+    <!-- Main JS -->
+    <script src="../template/assets/js/main.js "></script>
+
+    <!-- Page JS -->
+    <script src="../template/assets/js/extended-ui-drag-and-drop.js "></script>
 </body>
 
 </html>
