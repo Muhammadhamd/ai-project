@@ -737,13 +737,16 @@
                             <div class="drag-handle " style="max-width: 800PX; width: 100%; ">
                                 <div class="card shadow-none mb-3 ">
                                     <div class="card-body ">
-                                        <div class="dropdown" style="position:absolute; right: 10px; font-size: 10px !important; ">
+                                        <div class="dropdown" style="position:; right: 10px; font-size: 10px !important; ">
                                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow show" data-bs-toggle="dropdown" aria-expanded="true">
                                               <i class="ti ti-dots-vertical"></i>
                                             </button>
-                                            <div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1044px, 157.6px, 0px);">
-                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
-                                                <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Re-generate</a>
+                                            <div style="position: relative;">
+                                                <div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1044px, 157.6px, 0px);">
+                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Re-generate</a>
+                                                </div>
+
                                             </div>
                                         </div>
                                         <h4 class="card-title ">Body Scan Meditation</h4>

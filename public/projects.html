@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../template/assets/" data-template="vertical-menu-template">
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../template/assets/" data-template="vertical-menu-template-no-customizer">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Wizard Numbered - Forms | Vuexy - Bootstrap Admin Template</title>
+    <title>Dashboard - eCommerce | Vuexy - Bootstrap Admin Template</title>
 
     <meta name="description" content="" />
 
@@ -32,10 +32,10 @@
     <link rel="stylesheet" href="../template/assets/vendor/libs/node-waves/node-waves.css" />
     <link rel="stylesheet" href="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="../template/assets/vendor/libs/typeahead-js/typeahead.css" />
-    <link rel="stylesheet" href="../template/assets/vendor/libs/bs-stepper/bs-stepper.css" />
-    <link rel="stylesheet" href="../template/assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
     <link rel="stylesheet" href="../template/assets/vendor/libs/select2/select2.css" />
-    <link rel="stylesheet" href="../template/assets/vendor/libs/@form-validation/umd/styles/index.min.css" />
+    <link rel="stylesheet" href="../template/assets/vendor/libs/tagify/tagify.css" />
+    <link rel="stylesheet" href="../template/assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+    <link rel="stylesheet" href="../template/assets/vendor/libs/typeahead-js/typeahead.css" />
 
     <!-- Page CSS -->
 
@@ -50,6 +50,10 @@
 
 <body>
     <!-- Layout wrapper -->
+    <div class=" justify-content-center align-items-center clientpopup" id="" style="display: none; height: 100vh; position: absolute; z-index: 2000; width: 100%; background-color: rgba(0, 0, 0, 0.282);">
+
+
+    </div>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
@@ -115,13 +119,13 @@
                             <div>Projects</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item active">
+                            <li class="menu-item">
                                 <a href="./addProject.html" class="menu-link">
                                     <div>Add new</div>
                                 </a>
                             </li>
                            
-                            <li class="menu-item ">
+                            <li class="menu-item active">
                                 <a href="projects.html" class="menu-link">
                                     <div>Projects</div>
                                 </a>
@@ -202,31 +206,6 @@
                                 </ul>
                             </li>
                             <!--/ Language -->
-
-                            <!-- Style Switcher -->
-                            <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
-                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                                    <i class="ti ti-md"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
-                                            <span class="align-middle"><i class="ti ti-sun me-2"></i>Light</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0);" data-theme="dark">
-                                            <span class="align-middle"><i class="ti ti-moon me-2"></i>Dark</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
-                                            <span class="align-middle"><i class="ti ti-device-desktop me-2"></i>System</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- / Style Switcher-->
 
                             <!-- Quick links  -->
                             <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
@@ -613,442 +592,490 @@
                     <!-- Content -->
 
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h4 class="py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span>Add Project</h4>
-                        <!-- Default -->
-                        <div class="row">
 
 
 
-                            <!-- Validation Wizard -->
-                            <div class="col-12 mb-4">
 
-                                <div id="wizard-validation" class="bs-stepper mt-2">
-                                    <div class="bs-stepper-header">
-                                        <div class="step" data-target="#account-details-validation">
-                                            <button type="button" class="step-trigger">
-                          <span class="bs-stepper-circle">1</span>
-                          <span class="bs-stepper-label mt-1">
-                            <span class="bs-stepper-title">Project Details</span>
-                            <span class="bs-stepper-subtitle">Setup Project Details</span>
-                          </span>
-                        </button>
+
+
+                        <div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-4" style="margin-right: 22px;">
+                                <h4 class="py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Projects</h4>
+                                <div class="d-flex gap-3" style="max-width: 740px; width: 100%;">
+                                    <div style="max-width: 400px; width: 100%;">
+                                        <div class="input-group input-group-merge">
+                                            <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
+                                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon-search31" />
                                         </div>
-                                        <div class="line">
-                                            <i class="ti ti-chevron-right"></i>
-                                        </div>
-                                        <div class="step" data-target="#personal-info-validation">
-                                            <button type="button" class="step-trigger">
-                          <span class="bs-stepper-circle">2</span>
-                          <span class="bs-stepper-label">
-                            <span class="bs-stepper-title">Choose Title</span>
-                            <span class="bs-stepper-subtitle">Select perfect Title</span>
-                          </span>
-                        </button>
-                                        </div>
-                                        <div class="line">
-                                            <i class="ti ti-chevron-right"></i>
-                                        </div>
-                                        <div class="step" data-target="#social-links-validation">
-                                            <button type="button" class="step-trigger">
-                          <span class="bs-stepper-circle">3</span>
-                          <span class="bs-stepper-label">
-                            <span class="bs-stepper-title">Genrate Blog</span>
-                            <span class="bs-stepper-subtitle">Generate Blog Content</span>
-                          </span>
-                        </button>
-                                        </div>
+
                                     </div>
-                                    <div class="bs-stepper-content">
-                                        <form id="wizard-validation-form" onSubmit="return false">
-                                            <!-- Account Details -->
-                                            <div id="account-details-validation" class="content">
-                                                <div class="content-header mb-3">
-                                                    <h6 class="mb-0">Project Details</h6>
-                                                    <small>Enter Your Account Details.</small>
-                                                </div>
-                                                <div class="row g-3">
-                                                    <div class="col-sm-6">
-                                                        <label class="form-label" for="formValidationUsername">Key Point</label>
-                                                        <input type="text" name="formValidationUsername" id="formValidationUsername" class="form-control" placeholder="johndoe" />
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label class="form-label" for="formValidationEmail">Suggest SEO Keywords</label>
-                                                        <select id="select2Info" class="select2 form-select" multiple>
-                                                            <option value="1" selected>Option1</option>
-                                                            <option value="2" selected>Option2</option>
-                                                            <option value="3">Option3</option>
-                                                            <option value="4">Option4</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label class="form-label" for="formValidationEmail">Select Audience</label>
-                                                        <select id="select2Infos" class="select2 form-select" multiple>
-                                                            <option value="1" >Option1</option>
-                                                            <option value="2" >Option2</option>
-                                                            <option value="3">Option3</option>
-                                                            <option value="4">Option4</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label class="form-label" for="formValidationEmail">Type of Content</label>
-                                                        <select id="select3" class="select2 form-select" multiple>
-                                                            <option value="1" >Option1</option>
-                                                            <option value="2" >Option2</option>
-                                                            <option value="3">Option3</option>
-                                                            <option value="4">Option4</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label class="form-label" for="formValidationEmail">Choose Tone</label>
-                                                        <select id="select4" class="select2 form-select" multiple>
-                                                            <option value="1" selected>Option1</option>
-                                                            <option value="2" selected>Option2</option>
-                                                            <option value="3">Option3</option>
-                                                            <option value="4">Option4</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <label class="form-label" for="formValidationEmail">Choose a CLient </label>
-                                                        <select id="select5" class="select2 form-select" multiple>
-                                                            <option value="1" >Option1</option>
-                                                            <option value="2" >Option2</option>
-                                                            <option value="3">Option3</option>
-                                                            <option value="4">Option4</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-12 d-flex justify-content-between">
-                                                        <button class="btn btn-label-secondary btn-prev" disabled>
-                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                                <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                              </button>
-                                                        <button class="btn btn-primary btn-next">
-                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Next</span>
-                                <i class="ti ti-arrow-right"></i>
-                              </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Personal Info -->
-                                            <div id="personal-info-validation" class="content">
-                                                <div class="content-header mb-3">
-                                                    <h6 class="mb-0">Choose Title</h6>
-                                                    <small>Select perfect Title</small>
-                                                </div>
-                                                <div id="title-main-div">
+                                    <div>
+                                        <a href="./addProject.html">
+                                            <button id="openAddCLientBtn" class="clipboard-btn btn btn-primary  waves-effect waves-light" data-clipboard-action="copy" data-clipboard-target="#clipboard-example">
+                                            + Project
+                                          </button>
+                                        </a>
+                                    </div>
+                                    <div style="max-width: 200px; width: 100%;">
+                                        <div class="dropdown bootstrap-select w-100">
+                                            <select id="selectpickerBasic" class="selectpicker w-100" data-style="btn-default" tabindex="null">
 
-                                                    <div class="mb-4">
-                                                        <div class="col-md mb-md-0 mb-4" style="margin: 10px;">
-                                                            <div class="form-check custom-option custom-option-basic">
-                                                                <label class="form-check-label custom-option-content" for="customRadioTemp1">
-                                                            <input
-                                                              name="customRadioTemp"
-                                                              class="form-check-input"
-                                                              type="radio"
-                                                              value=""
-                                                              id="customRadioTemp1"
-                                                              checked />
-                                                           
-                                                              <span class="h6 mb-0">The Best Free Software of 2023</span>
-                                                            
-                                                           
-                                                          </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md mb-md-0 " style="margin: 10px;">
-                                                            <div class="form-check custom-option custom-option-basic">
-                                                                <label class="form-check-label custom-option-content" for="customRadioTemp2">
-                                                            <input
-                                                              name="customRadioTemp"
-                                                              class="form-check-input"
-                                                              type="radio"
-                                                              value=""
-                                                              id="customRadioTemp2"
-                                                              checked />
-                                                            
-                                                              <span class="h6 mb-0">Top Free Software of 2023</span>
-                                                              
-                                                            
-                                                           
-                                                          </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md mb-md-0 " style="margin: 10px;">
-                                                            <div class="form-check custom-option custom-option-basic">
-                                                                <label class="form-check-label custom-option-content" for="customRadioTemp3">
-                                                            <input
-                                                              name="customRadioTemp"
-                                                              class="form-check-input"
-                                                              type="radio"
-                                                              value=""
-                                                              id="customRadioTemp3"
-                                                              checked />
-                                                            
-                                                              <span class="h6 mb-0">Explore the Top Free Software Picks of 2023</span>
-                                                              
-                                                            
-                                                           
-                                                          </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md mb-md-0 " style="margin: 10px;">
-                                                            <div class="form-check custom-option custom-option-basic">
-                                                                <label class="form-check-label custom-option-content" for="customRadioTemp4">
-                                                            <input
-                                                              name="customRadioTemp"
-                                                              class="form-check-input"
-                                                              type="radio"
-                                                              value=""
-                                                              id="customRadioTemp4"
-                                                              checked />
-                                                            
-                                                              <span class="h6 mb-0">Discover the Best Free Software Offerings in 2023</span>
-                                                              
-                                                            
-                                                           
-                                                          </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 d-flex justify-content-between">
-                                                        <button class="btn btn-label-secondary btn-prev">
-                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                                <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                              </button>
-                                                        <div class="d-flex align-items-center gap-4">
-                                                            <button class="btn btn-primary">
-                                                            <span class="align-middle d-sm-inline-block d-none me-sm-1">More</span>
-                                                          
-                                            </button>
-                                                            <button class="btn btn-primary">
-                                                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Re-Genrate</span>
-                                                                
-                                                              </button>
-                                                            <button class="btn btn-primary btn-next">
-                                                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Next</span>
-                                                                <i class="ti ti-arrow-right"></i>
-                                                              </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Social Links -->
-                                            <div id="social-links-validation" class="content">
-                                                <div class="content-header mb-3">
-                                                    <h6 class="mb-0">Outline</h6>
-                                                    <small>The BLog Outline</small>
-                                                </div>
-                                                <div class="row g-3">
-                                                    <div class="m">
-                                                        <ul class="timeline ms-1 mb-0" id="handle-list-2">
-
-
-
-                                                            <li class="drag-handle timeline-item timeline-item-transparent ps-4">
-                                                                <span class="timeline-point timeline-point-warning"></span>
-                                                                <div class="timeline-event">
-                                                                    <div class="timeline-header">
-                                                                        <h6 class="mb-0">Mindfulness in Motion: A 7-Day Meditation Challenge</h6>
-                                                                        <small class="text-muted"><i class="ti ti-pencil me-1"></i></small>
-                                                                    </div>
-                                                                    <p class="mb-2">Intro</p>
-
-                                                                </div>
-                                                            </li>
-                                                            <li class=" drag-handle timeline-item timeline-item-transparent ps-4">
-                                                                <span class="timeline-point timeline-point-warning"></span>
-                                                                <div class="timeline-event">
-                                                                    <div class="timeline-header">
-                                                                        <h6 class="mb-0">Getting Started</h6>
-                                                                        <small class="text-muted"><i class="ti ti-pencil me-1"></i></small>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>Explain the basics of meditation for beginners.
-
-                                                                        </li>
-                                                                        <li>
-                                                                            Provide simple instructions for posture, breathing, and focus.
-                                                                        </li>
-                                                                        <li>
-                                                                            Share a motivational quote or insight to inspire participants.
-                                                                        </li>
-
-
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li class=" drag-handle timeline-item timeline-item-transparent ps-4">
-                                                                <span class="timeline-point timeline-point-warning"></span>
-                                                                <div class="timeline-event">
-                                                                    <div class="timeline-header">
-                                                                        <h6 class="mb-0">Mindful Breathing Techniques
-                                                                        </h6>
-                                                                        <small class="text-muted"><i class="ti ti-pencil me-1"></i></small>
-
-
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>Explore various breathing techniques to enhance mindfulness.
-
-                                                                        </li>
-                                                                        <li>
-                                                                            Provide step-by-step instructions for deep breathing, diaphragmatic breathing, or other techniques.
-                                                                        </li>
-                                                                        <li>
-                                                                            Share a motivational quote or insight to inspire participants.
-                                                                        </li>
-
-
-                                                                    </ul>
-
-                                                                </div>
-                                                            </li>
-                                                            <li class="drag-handle timeline-item timeline-item-transparent ps-4">
-                                                                <span class="timeline-point timeline-point-warning"></span>
-                                                                <div class="timeline-event">
-                                                                    <div class="timeline-header">
-                                                                        <h6 class="mb-0">Body Scan Meditation</h6>
-                                                                        <small class="text-muted"><i class="ti ti-pencil me-1"></i></small>
-
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            Introduce the concept of body scan meditation.
-                                                                        </li>
-                                                                        <li>
-                                                                            Guide participants through a step-by-step body scan, focusing on each part of the body.
-                                                                        </li>
-                                                                        <li>
-                                                                            Highlight the benefits of body scan meditation for relaxation and self-awareness.
-                                                                        </li>
-                                                                    </ul>
-
-                                                                </div>
-                                                            </li>
-                                                            <li class="drag-handle timeline-item timeline-item-transparent ps-4">
-                                                                <span class="timeline-point timeline-point-warning"></span>
-                                                                <div class="timeline-event">
-                                                                    <div class="timeline-header">
-                                                                        <h6 class="mb-0">Loving-Kindness Meditation</h6>
-                                                                        <small class="text-muted"><i class="ti ti-pencil me-1"></i></small>
-
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            Explain the principles of loving-kindness meditation.
-                                                                        </li>
-                                                                        <li>
-                                                                            Provide a script or guide for participants to practice sending positive intentions to themselves and others.
-                                                                        </li>
-                                                                        <li>
-                                                                            Discuss the emotional and psychological benefits of cultivating compassion.
-                                                                        </li>
-                                                                    </ul>
-
-                                                                </div>
-                                                            </li>
-
-                                                        </ul>
-
-                                                    </div>
-                                                    <div class="col-12 d-flex justify-content-between">
-                                                        <button class="btn btn-label-secondary btn-prev">
-                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                                <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                              </button>
-                                                        <div>
-                                                            <button class="btn btn-primary">
-                                    <span class="align-middle d-sm-inline-block d-none me-sm-1">Re-Genrate</span>
+                                      <option>Scheduled</option>
+                                      <option>Published</option>
+                                      <option>Draft</option>
+                                    </select>
                                     
-                                  </button>
-                                                                <button class="btn btn-success" id="genrateblog">Genrate</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
+                                </div>
+                            </button>
+                            <div class="dropdown-menu ">
+                                <div class="inner show" role="listbox" id="bs-select-1" tabindex="-1">
+                                    <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                </div>
+                            </div>
+                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- /Validation Wizard -->
+                            <div class="card">
 
+                                <div class="table-responsive text-nowrap">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Project</th>
+                                                <th>Client</th>
+                                                <th>Type</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-border-bottom-0">
+                                            <tr>
+                                                <td  class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-clock"></i></span>
+                                                      </div>
+                                                    <a href="blog.html"><span class="fw-medium text-info">Decide with Confidence: Mastering Choice</span></a>
+                                                </td>
+                                                <td>Albert Cook</td>
+                                                <td>
+                                                    Review
+                                                </td>
+                                                <td><span class="badge bg-label-primary me-1">Pending</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-circle-check"></i></span>
+                                                      </div>
+                                                      <a href="blog.html"><span class="fw-medium text-info">Innovation Spotlight: Emerging Tech Trends</span></a>
+                                                    
+                                                </td>
+                                                <td>Barry Hunter</td>
+                                                <td>
+                                                    Coumpany
 
+                                                </td>
+                                                <td><span class="badge bg-label-success me-1">Completed</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-circle-check"></i></span>
+                                                      </div>
+                                                      <a href="blog.html">
+                                                        <span class="fw-medium text-info">Joy Unveiled: The Science of Happiness</span>
+                                                      </a>
+                                                </td>
+                                                <td>Trevor Baker</td>
+                                                <td>
+                                                    Comparison
+                                                </td>
+                                                <td><span class="badge bg-label-info me-1">Scheduled</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-clock"></i></span>
+                                                      </div>
+                                                      <a href="blog.html">
+                                                        <span class="fw-medium text-info">Decide with Confidence: Mastering Choices</span>
+                                                      </a>
+                                                    
+                                                </td>
+                                                <td>Jerry Milton</td>
+                                                <td>
+
+                                                    Comparison
+                                                </td>
+                                                <td><span class="badge bg-label-primary me-1">Pending</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td  class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-clock"></i></span>
+                                                      </div>
+                                                    <a href="blog.html"><span class="fw-medium text-info">Decide with Confidence: Mastering Choice</span></a>
+                                                </td>
+                                                <td>Albert Cook</td>
+                                                <td>
+                                                    Review
+                                                </td>
+                                                <td><span class="badge bg-label-primary me-1">Pending</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-circle-check"></i></span>
+                                                      </div>
+                                                      <a href="blog.html"><span class="fw-medium text-info">Innovation Spotlight: Emerging Tech Trends</span></a>
+                                                    
+                                                </td>
+                                                <td>Barry Hunter</td>
+                                                <td>
+                                                    Coumpany
+
+                                                </td>
+                                                <td><span class="badge bg-label-success me-1">Completed</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-circle-check"></i></span>
+                                                      </div>
+                                                      <a href="blog.html">
+                                                        <span class="fw-medium text-info">Joy Unveiled: The Science of Happiness</span>
+                                                      </a>
+                                                </td>
+                                                <td>Trevor Baker</td>
+                                                <td>
+                                                    Comparison
+                                                </td>
+                                                <td><span class="badge bg-label-info me-1">Scheduled</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="d-flex align-items-center">
+                                                    <div class="avatar flex-shrink-0 me-3">
+                                                        <span class="avatar-initial rounded bg-label-success"><i class="ti ti-clock"></i></span>
+                                                      </div>
+                                                      <a href="blog.html">
+                                                        <span class="fw-medium text-info">Decide with Confidence: Mastering Choices</span>
+                                                      </a>
+                                                    
+                                                </td>
+                                                <td>Jerry Milton</td>
+                                                <td>
+
+                                                    Comparison
+                                                </td>
+                                                <td><span class="badge bg-label-primary me-1">Pending</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="ti ti-dots-vertical"></i>
+                                                </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div  style="margin-top: 70px;">
+                                    <h4>Recently</h4>
+                                    
+                                    <div class="card">
+                                        <div class="table-responsive text-nowrap">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Project</th>
+                                                        <th>Client</th>
+                                                        <th>Type</th>
+                                                        <th>Status</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="table-border-bottom-0">
+                                                    <tr>
+                                                        <td  class="d-flex align-items-center">
+                                                            <div class="avatar flex-shrink-0 me-3">
+                                                                <span class="avatar-initial rounded bg-label-success"><i class="ti ti-clock"></i></span>
+                                                              </div>
+                                                            <a href="blog.html"><span class="fw-medium text-info">Decide with Confidence: Mastering Choice</span></a>
+                                                        </td>
+                                                        <td>Albert Cook</td>
+                                                        <td>
+                                                            Review
+                                                        </td>
+                                                        <td><span class="badge bg-label-primary me-1">Pending</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                          <i class="ti ti-dots-vertical"></i>
+                                                        </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-1"></i> Edit</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-1"></i> Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="d-flex align-items-center">
+                                                            <div class="avatar flex-shrink-0 me-3">
+                                                                <span class="avatar-initial rounded bg-label-success"><i class="ti ti-circle-check"></i></span>
+                                                              </div>
+                                                              <a href="blog.html"><span class="fw-medium text-info">Innovation Spotlight: Emerging Tech Trends</span></a>
+                                                            
+                                                        </td>
+                                                        <td>Barry Hunter</td>
+                                                        <td>
+                                                            Coumpany
+        
+                                                        </td>
+                                                        <td><span class="badge bg-label-success me-1">Completed</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                          <i class="ti ti-dots-vertical"></i>
+                                                        </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                   
+                                                    <tr>
+                                                        <td class="d-flex align-items-center">
+                                                            <div class="avatar flex-shrink-0 me-3">
+                                                                <span class="avatar-initial rounded bg-label-success"><i class="ti ti-circle-check"></i></span>
+                                                              </div>
+                                                              <a href="blog.html"><span class="fw-medium text-info">Innovation Spotlight: Emerging Tech Trends</span></a>
+                                                            
+                                                        </td>
+                                                        <td>Barry Hunter</td>
+                                                        <td>
+                                                            Coumpany
+        
+                                                        </td>
+                                                        <td><span class="badge bg-label-success me-1">Completed</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                          <i class="ti ti-dots-vertical"></i>
+                                                        </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="d-flex align-items-center">
+                                                            <div class="avatar flex-shrink-0 me-3">
+                                                                <span class="avatar-initial rounded bg-label-success"><i class="ti ti-circle-check"></i></span>
+                                                              </div>
+                                                              <a href="blog.html">
+                                                                <span class="fw-medium text-info">Joy Unveiled: The Science of Happiness</span>
+                                                              </a>
+                                                        </td>
+                                                        <td>Trevor Baker</td>
+                                                        <td>
+                                                            Comparison
+                                                        </td>
+                                                        <td><span class="badge bg-label-info me-1">Scheduled</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                          <i class="ti ti-dots-vertical"></i>
+                                                        </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="d-flex align-items-center">
+                                                            <div class="avatar flex-shrink-0 me-3">
+                                                                <span class="avatar-initial rounded bg-label-success"><i class="ti ti-clock"></i></span>
+                                                              </div>
+                                                              <a href="blog.html">
+                                                                <span class="fw-medium text-info">Decide with Confidence: Mastering Choices</span>
+                                                              </a>
+                                                            
+                                                        </td>
+                                                        <td>Jerry Milton</td>
+                                                        <td>
+        
+                                                            Comparison
+                                                        </td>
+                                                        <td><span class="badge bg-label-primary me-1">Pending</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                          <i class="ti ti-dots-vertical"></i>
+                                                        </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-pencil me-2"></i> Edit</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-trash me-2"></i> Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                            </div>
+                         
                         </div>
 
+                        <div>
 
-
+                        </div>
+                        <!-- Content wrapper -->
                     </div>
-
-
-                    <div class="content-backdrop fade"></div>
+                    <!-- / Layout page -->
                 </div>
-                <!-- Content wrapper -->
+
+                <!-- Overlay -->
+                <div class="layout-overlay layout-menu-toggle"></div>
+
+                <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+                <div class="drag-target"></div>
             </div>
-            <!-- / Layout page -->
-        </div>
+            <!-- / Layout wrapper -->
 
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
+            <!-- Core JS -->
+            <!-- build:js assets/vendor/js/core.js -->
 
-        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-        <div class="drag-target"></div>
-    </div>
-    <!-- / Layout wrapper -->
+            <script src="../template/assets/vendor/libs/jquery/jquery.js"></script>
+            <script src="../template/assets/vendor/libs/popper/popper.js"></script>
+            <script src="../template/assets/vendor/js/bootstrap.js"></script>
+            <script src="../template/assets/vendor/libs/node-waves/node-waves.js"></script>
+            <script src="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+            <script src="../template/assets/vendor/libs/hammer/hammer.js"></script>
+            <script src="../template/assets/vendor/libs/i18n/i18n.js"></script>
+            <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+            <script src="../template/assets/vendor/js/menu.js"></script>
 
-    <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
+            <!-- endbuild -->
 
-    <script src="../template/assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../template/assets/vendor/libs/popper/popper.js"></script>
-    <script src="../template/assets/vendor/js/bootstrap.js"></script>
-    <script src="../template/assets/vendor/libs/node-waves/node-waves.js"></script>
-    <script src="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../template/assets/vendor/libs/hammer/hammer.js"></script>
-    <script src="../template/assets/vendor/libs/i18n/i18n.js"></script>
-    <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js"></script>
-    <script src="../template/assets/vendor/js/menu.js"></script>
+            <!-- Vendors JS -->
+            <script src="../template/assets/vendor/libs/select2/select2.js"></script>
+            <script src="../template/assets/vendor/libs/tagify/tagify.js"></script>
+            <script src="../template/assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+            <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+            <script src="../template/assets/vendor/libs/bloodhound/bloodhound.js"></script>
 
-    <!-- endbuild -->
+            <!-- Main JS -->
+            <script src="../template/assets/js/main.js"></script>
 
-    <!-- Vendors JS -->
-    <script src="../template/assets/vendor/libs/bs-stepper/bs-stepper.js"></script>
-    <script src="../template/assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
-    <script src="../template/assets/vendor/libs/select2/select2.js"></script>
-    <script src="../template/assets/vendor/libs/@form-validation/umd/bundle/popular.min.js"></script>
-    <script src="../template/assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js"></script>
-    <script src="../template/assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js"></script>
+            <!-- Page JS -->
+            <script src="../template/assets/js/forms-selects.js"></script>
+            <script src="../template/assets/js/forms-tagify.js"></script>
+            <script src="../template/assets/js/forms-typeahead.js"></script>
 
-    <!-- Main JS -->
-    <script src="../template/assets/js/main.js"></script>
-
-    <!-- Page JS -->
-
-    <script src="../template/assets/js/form-wizard-numbered.js"></script>
-    <script src="../template/assets/js/form-wizard-validation.js"></script>
-    <script src="../template/assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../template/assets/vendor/libs/popper/popper.js"></script>
-    <script src="../template/assets/vendor/js/bootstrap.js"></script>
-    <script src="../template/assets/vendor/libs/node-waves/node-waves.js"></script>
-    <script src="../template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../template/assets/vendor/libs/hammer/hammer.js"></script>
-    <script src="../template/assets/vendor/libs/i18n/i18n.js"></script>
-    <script src="../template/assets/vendor/libs/typeahead-js/typeahead.js"></script>
-    <script src="../template/assets/vendor/js/menu.js"></script>
-
-    <!-- endbuild -->
-
-    <!-- Vendors JS -->
-    <script src="../template/assets/vendor/libs/sortablejs/sortable.js"></script>
-
-    <!-- Main JS -->
-    <script src="../template/assets/js/main.js"></script>
-
-    <!-- Page JS -->
-    <script src="../template/assets/js/extended-ui-drag-and-drop.js"></script>
-    <script>
-        document.getElementById("genrateblog").addEventListener("click",(e)=>{
-            window.location.href = "/public/blog.html"
-        })
-    </script>
+            <script>
+                document.getElementById("closeclientpopupBtn").addEventListener("click", (e) => {
+                    e.preventDefault();
+                    document.querySelector(".clientpopup").style.display = "none";
+                })
+                document.getElementById("openAddCLientBtn").addEventListener("click", (e) => {
+                    window.location.href = "./addProject.html"
+                })
+            </script>
 </body>
 
 </html>
