@@ -47,7 +47,20 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../template/assets/js/config.js"></script>
 </head>
+<style>
+    @media screen and (max-width:800px) {
+        .d-flex {
+            max-width: 100% !important;
+            justify-content: flex-end; /* 'end' is not a valid value, use 'flex-end' */
+        }
+    }
 
+    /* .d-flex {
+        max-width: 540px;
+        width: 100%;
+    } */
+
+</style>
 <body>
     <!-- Layout wrapper -->
     <div class=" justify-content-center align-items-center clientpopup" id="" style="display: none; height: 100vh; position: absolute; z-index: 2000; width: 100%; background-color: rgba(0, 0, 0, 0.282);">
@@ -702,9 +715,9 @@
 
                         <div>
 
-                            <div class="d-flex justify-content-between align-items-center mt-4" style="margin-right: 22px;">
-                                <h4 class="py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Clients</h4>
-                                <div class="d-flex gap-3" style="max-width: 540px; width: 100%;">
+                            <div class=" d-flex justify-content-between align-items-center mt-4" style="flex-wrap: wrap; margin-right: 22px;">
+                                <h4 class="py-3 mb-4" style="max-width: 200px;"><span class="text-muted fw-light">Dashboard/</span> Clients</h4>
+                                <div class="d-flex gap-3" style="max-width: 540px; width: 100%; margin-bottom: 10px;">
                                     <div style="max-width: 400px; width: 100%;">
                                         <div class="input-group input-group-merge">
                                             <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
@@ -716,7 +729,7 @@
                                   <option>The Godfather</option>
                                 </select> -->
                                     </div>
-                                    <div><button id="openAddCLientBtn" class="clipboard-btn btn btn-primary  waves-effect waves-light" data-clipboard-action="copy" data-clipboard-target="#clipboard-example">
+                                    <div><button style="min-width: 102px;" id="openAddCLientBtn" class="clipboard-btn btn btn-primary  waves-effect waves-light" data-clipboard-action="copy" data-clipboard-target="#clipboard-example">
                                     + Client
                                   </button></div>
                                 </div>
